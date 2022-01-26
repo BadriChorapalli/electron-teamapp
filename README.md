@@ -6,13 +6,13 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/clytras/electron-socket
+git clone https://github.com/BadriChorapalli/electron-teamapp.git
 # Go into the repository
-cd electron-quick-start
+cd electron-teamap
 # Install dependencies
 npm install
 # Run the server socket
-node ./socket/index.js
+node ./sockets/index.js
 # Run the app
 npm start
 ```
