@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+
+    <meta http-equiv="X-Content-Security-Policy" allow="display-capture" content="default-src 'self' display-capture 'self' ws://localhost:*/socket.io/; script-src 'self' ws://localhost:*/socket.io/">
+<script type="text/javascript" src="jquery.js"></script>
+
+    <title>Hello World!</title>
+	<style>
+	#video {
+  border: 1px solid #999;
+  width: 98%;
+  max-width: 860px;
+}
+
+.error {
+  color: red;
+}
+
+.warn {
+  color: orange;
+}
+
+.info {
+  color: darkgreen;
+}
+	</style>
+  </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+<script>
+
+</script> 
+
+  <body>
+  <select id="picture" class="image-picker show-html">
+  </select>
+     <input type="button" id="btnEd" value="Send Data" onclick="getData()" />
+<p>This example shows you the contents of the selected part of your display.
+Click the Start Capture button to begin.</p>
+
+<p><button id="start">Start Capture</button>&nbsp;<button id="stop">Stop Capture</button></p>
+
+<video id="video" autoplay></video>
+<br>
+
+<strong>Log:</strong>
+<br>
+<pre id="log"></pre>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+
+  </body>
+</html>

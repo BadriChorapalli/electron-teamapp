@@ -1,0 +1,27 @@
+{
+  "name": "electron-sockets",
+  "version": "1.0.0",
+  "description": "Electron socket.io example",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/clytras/electron-sockets",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^16.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "socket.io": "^2.4.0",
+    "socket.io-client": "^4.4.1"
+  }
+}
